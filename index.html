@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="movieSection.css">
+    <link rel="stylesheet" href="banner-section.css">
+</head>
+
+<body>
+    <!-- Header section  -->
+    <header id="mainHeader" >
+        <div class="container flex-container">
+            <div class="left-container">
+                <img src="./images/Netflix logo.png" alt="Netlfix">
+                <ul class="nav-list">
+                    <li class="nav-items "><a href="#" class="active">Home</a></li>
+                    <li class="nav-items"><a href="#">Tv Shows</a></li>
+                    <li class="nav-items"><a href="#">Movies</a></li>
+                    <li class="nav-items"><a href="#">News & Popular</a></li>
+                    <li class="nav-items"><a href="#">My List</a></li>
+                    <li class="nav-items"><a href="#">Browse by Language</a></li>
+                </ul>
+            </div>
+            <div class="right-container">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                    <path
+                        d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+                </svg>
+                <img src="./images/netflix user.webp" alt="user">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                    <path
+                        d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends  -->
+    <!-- Hero section Starts from here  -->
+    <div class="banner-section ">
+        <div class="banner-content container">
+            <div id="banner-text-data">
+                <!-- Dynamic data Will come here through Js  -->
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn"><svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 384 512">
+                        <path
+                            d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                    </svg>Play</button>
+                <button class="action-btn info-btn"><svg class="btn-svg info-svg" xmlns="http://www.w3.org/2000/svg"
+                        height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                    </svg>More Info</button>
+            </div>
+        </div>
+        <div class="bottom-fade"></div>
+    </div>
+    <!-- Movies row Section  -->
+    <div class="container " id="movies-container">
+        <!-- Here Movies Section will comes Dynamically  -->
+    </div>
+    </div>
+    <!-- Movies row Section Ends here  -->
+    <!-- Javascript link  -->
+    <script src="script.js"></script>
+    <!-- Font Awesome Icon Kit Link  -->
+    <script src="https://kit.fontawesome.com/f84b24b31a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

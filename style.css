@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Universal Css  */
+html,
+body {
+    scroll-behavior: smooth;
+  background-color: black;
+  padding: 0rem;
+  margin: 0rem;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+/* container Css  */
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* header Css  */
+header {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  z-index: 6;  /* It is 6 bcz banner's content has z-index 5 so it must be higher than that  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  transition: background-color ease 0.5s;
+}
+header::-webkit-scrollbar{
+    position: sticky;
+    top: 2rem;
+}
+
+/* Background Color Black for Header on Scroll  */
+ .bg-color{
+    background-color: rgb(20, 20, 20);
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* left container contains logo and nav links  */
+.left-container,
+.right-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.left-container img {
+  width: 7rem;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+.nav-list li {
+  padding: 0rem 0.8rem 0 0;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #dad8d8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.nav-list li a:hover {
+  color: rgb(255, 255, 255);
+}
+.active {
+  color: rgb(255, 255, 255) !important;
+}
+
+/* right Container Css  */
+
+.right-container img {
+  width: 1.6rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.right-container svg {
+  fill: white;  
+  cursor: pointer;
+}

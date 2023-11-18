@@ -1,0 +1,63 @@
+.movie-section {
+  color: white;
+  margin: 2rem 0rem;
+}
+.genres_name {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.explore_nudge {
+  font-size: 0.7rem;
+  color: rgb(73, 73, 190);
+  display: none;
+  cursor: pointer;
+  margin: 0 0.6rem;
+}
+.genres_name:hover .explore_nudge {
+  display: inline;
+  transition: display ease 1s;
+}
+.movieRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.movie_banner {
+  width: 15rem;
+  height: 8rem;
+  border-radius: 0.4rem;
+  margin: 0 0.6rem 0 0;
+  object-fit: contain;
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+.movie_banner:hover {
+  transform: scale(1.3);
+}
+
+/* Iframe Movie on Hover  */
+.movie-banner-hover {
+  position: relative;
+}
+.movie-banner-hover:hover .iframeVideo {
+  display: block;
+}
+.iframeVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all linear 0.5s;
+}
+.iframeVideo:hover {
+  transform: scale(1.3);
+}

@@ -1,0 +1,80 @@
+.banner-section {
+  /* background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_large.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  color: white;
+  position: relative;
+  gap: 2rem;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 6rem;
+  gap: 1rem;
+  max-width: 30%;
+  width: 100%;
+  z-index: 1;
+}
+.banner-heading {
+  font-size: 4rem;
+  margin: 0rem;
+  font-family: 'Bebas Neue',  sans-serif;
+  width: 30rem;
+}
+.trending-number {
+  margin: 0;
+  font-size: 1.2rem;
+}
+#banner-text-data{
+    z-index: 5;
+}
+.banner-paragraph {
+  margin-top: 0.2rem;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 0.8rem;
+}
+.action-buttons{
+    z-index: 2;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+.action-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: center    ;
+}
+.info-btn {
+  background-color: rgb(129, 129, 129);
+  color: white;
+}
+.info-svg {
+  fill: white;
+}
+.btn-svg {
+  vertical-align: text-top;
+  margin: 0rem 0.4rem;
+}
+.bottom-fade{
+    position: absolute;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.71),rgba(37,37,37,.61),#141414);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 0.4rem 0.4rem;
+}
